@@ -1,0 +1,94 @@
+body {
+  background: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Page wrapper */
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  width: 90vw;
+  margin: 5rem auto;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  max-width: 800px;
+
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #d62828;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* Question Card */
+.question {
+  padding: 1rem 1.5rem;
+  border: 1px solid #eaeaea;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  background: #fff;
+
+  transition: all 0.3s ease;
+}
+
+.question:hover {
+  transform: translateY(-3px);
+}
+
+/* Header row */
+.question header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.question h5 {
+  font-weight: 600;
+  color: #222;
+  font-size: 1rem;
+}
+
+/* Answer text */
+.question p {
+  color: #555;
+  line-height: 1.8;
+  margin-top: 1rem;
+}
+
+/* Toggle button */
+.question-btn {
+  background: #d62828;
+  border: none;
+
+  width: 2rem;
+  height: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.question-btn:hover {
+  background: #b71c1c;
+  transform: scale(1.1);
+}

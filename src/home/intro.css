@@ -1,0 +1,85 @@
+.intro {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+/* Background Image */
+.intro img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Dark Overlay */
+.intro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+/* Content */
+.intro h1,
+.intro p,
+.intro button {
+  position: relative;
+  z-index: 3;
+}
+
+/* Title */
+.intro h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Subtitle */
+.intro p {
+  color: #f5f5f5;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Button */
+.intro button {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 50px;
+
+  background: #d62828;
+  color: white;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.intro button:hover {
+  background: #b71c1c;
+  transform: translateY(-3px);
+}

@@ -1,0 +1,64 @@
+.locations {
+  padding: 5rem 8%;
+  background: #f5f5f5;
+}
+
+.locations h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #d62828;
+  margin-bottom: 2rem;
+}
+
+.locations-filter {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.locations-filter button {
+  border: none;
+  padding: 0.8rem 1.5rem;
+  background: #d62828;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.locations-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.location {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location h2 {
+  color: #d62828;
+  margin-bottom: 0.5rem;
+}
+
+.location-map {
+  font-size: 3rem;
+  color: #d62828;
+}
+
+.info-btn {
+  border: none;
+  background: transparent;
+  color: #d62828;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 5px;
+}
